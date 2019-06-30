@@ -77,7 +77,7 @@ public:
 
     virtual status_t useBuffer(
             node_id node, OMX_U32 port_index, const sp<IMemory> &params,
-            buffer_id *buffer, OMX_BOOL crossProcess);
+            buffer_id *buffer);
 
 #ifdef MTK_HARDWARE
     virtual status_t useBuffer(
@@ -119,7 +119,7 @@ public:
 
     virtual status_t allocateBufferWithBackup(
             node_id node, OMX_U32 port_index, const sp<IMemory> &params,
-            buffer_id *buffer, OMX_BOOL crossProcess);
+            buffer_id *buffer);
 
     virtual status_t freeBuffer(
             node_id node, OMX_U32 port_index, buffer_id buffer);
